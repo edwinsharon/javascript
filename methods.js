@@ -25,11 +25,11 @@
 // a.findIndex
 
 let a= [6,8,22,4,5,2,9,1];
-console.log(a.forEach());
-console.log(a);
+// console.log(a.forEach());
+// console.log(a);
 
 
-// let a = [4,10,20,30,4,5,6,7,8,7];
+// let b = [4,10,20,30,4,5,6,7,8,7];
 // a.forEach((a,b,c) => console.log(c));
 // console.log(a.map((a,b,c) => a*b));
 // console.log(a.filter((a,b,c) => b>4));
@@ -37,11 +37,55 @@ console.log(a);
 // console.log(a.lastIndexOf(7));
 // console.log(a.splice(1));
 // let q  = a.sort((x,y) => (x>y));
+// console.log(q)
 // console.log(a.reverse());
 // console.log(a.reduce((a,b) => a - b));
-// console.log(a.join(""));
+// console.log(a.join(","));
 // console.log(a.concat([32,45,76]));
-// console.log(a.some((a,b,c) => a == 20));
+// console.log(a.some((a,b,c) => a == 22));
 // a.fill(2);
+// console.log(a)
 // console.log(a.flat());
 // console.log(a.findIndex((a,b,c) => (a>6) && (a<8)));
+
+
+
+
+
+// let x = {
+//  name: "Raju",
+//  age: 23,
+//  address: {
+
+//  },
+//  hobbies: [
+
+//  ],
+//  action: () => console.log("actions")
+// };
+
+// let { name, age, ...z } = x;
+// x["age"] = "123456789";
+// let y = {...x, dob: ""};
+// x.name = "Radha";
+// console.log(y);
+
+
+// String functions and props
+// length
+// replace()
+// replaceAll()
+// split()
+// indexOf()
+// lastIndexOf()
+// charAt()
+// concat()
+// includes()
+// repeat()
+// slice()
+// substring()
+// toUpperCase()
+// toLowerCase()
+// trim()
+// trimEnd()
+// trimStart()

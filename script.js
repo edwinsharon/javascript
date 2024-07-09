@@ -10,18 +10,21 @@
 // console.log(fib(3))
 
 
-let a="hai";
-b=a.split('');
+// let a="";
+// b=a.split('');
+// b=b.reverse();
+// b=b.join("");
+// if (a==b){
+//     console.log("it is paliendrome")
+// }
+// else{
+//     console.log("it is not paliendrome")
+// }
 
-b=b.reverse()
 
-b=b.join()
-
-if (a==b){
-    console.log("it is paliendrome")
-}
-else{
-    console.log("it is not paliendrome")
-}
-
+let a="my name is is ronin";
+b=a.split(" ");
+let y= new Set(b);
+y=y.join(" ")
+console.log(y);
 

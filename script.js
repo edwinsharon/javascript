@@ -22,9 +22,14 @@
 // }
 
 
-let a="my name is is ronin";
-b=a.split(" ");
-let y= new Set(b);
-y=y.join(" ")
-console.log(y);
+// let a="my name is is ronin";
+// b=a.split(" ");
+// let y= new Set(b);
+// y=y.join(" ")
+// console.log(y);
 
+
+let vowels=['a','e','i','o','u'];
+let k="hello guys are you okay man";
+j=k.split(" ");
+let nofvowel=0;

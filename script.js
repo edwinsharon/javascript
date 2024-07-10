@@ -31,5 +31,18 @@
 
 let vowels=['a','e','i','o','u'];
 let k="hello guys are you okay man";
-j=k.split(" ");
-let nofvowel=0;
+let j=k.split(" ");
+for (let i=0; i<j.length;i++){
+    let nofvowel=0;
+    for(let a=0;a<vowels.length;a++){
+        if(j[i].includes(vowels[a])){
+            nofvowel+=1;
+        }
+    }
+    if(nofvowel>1){
+        
+        j.splice(i, 1);
+        i--; 
+    }
+}
+console.log(j);

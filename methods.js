@@ -139,3 +139,49 @@
 // console.log(x.has("x3"));;
 
 // console.log(x);
+
+
+
+
+
+
+
+
+
+
+// function abcd(a,b,cb) {
+//  // ...
+//  cb();
+// }
+
+// function getData(a) {
+//  return new Promise((res, rej) => {
+//   // ....
+//   res("Response data");
+//   // rej("Error occured");
+//  });
+// }
+
+
+// let resP = getData("teachers");
+
+// resP.then((a) => {
+//  return getData("class");
+// })
+// .then((a) => {
+//  console.log(a);
+// })
+// .catch((e) => {
+//  console.log(e);
+// })
+
+// https://jsonplaceholder.typicode.com/todos
+
+let res = fetch("https://jsonplaceholder.typicode.com/todos");
+
+res.then(e => {
+ return e.json();
+})
+.then(b => {
+ console.log(b);
+})

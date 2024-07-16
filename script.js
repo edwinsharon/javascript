@@ -29,20 +29,30 @@
 // console.log(y);
 
 
-let vowels=['a','e','i','o','u'];
-let k="hello guys are you okay man";
-let j=k.split(" ");
-for (let i=0; i<j.length;i++){
-    let nofvowel=0;
-    for(let a=0;a<vowels.length;a++){
-        if(j[i].includes(vowels[a])){
-            nofvowel+=1;
-        }
-    }
-    if(nofvowel>1){
+// let vowels=['a','e','i','o','u'];
+// let k="hello guys are you okay man";
+// let j=k.split(" ");
+// for (let i=0; i<j.length;i++){
+//     let nofvowel=0;
+//     for(let a=0;a<vowels.length;a++){
+//         if(j[i].includes(vowels[a])){
+//             nofvowel+=1;
+//         }
+//     }
+//     if(nofvowel>1){
         
-        j.splice(i, 1);
-        i--; 
-    }
-}
-console.log(j);
+//         j.splice(i, 1);
+//         i--; 
+//     }
+// }
+// console.log(j);
+
+
+let res = fetch("https://jsonplaceholder.typicode.com/todos");
+
+res.then(e => {
+ return e.json();
+})
+.then(b => {
+ console.log(b);
+})

@@ -57,7 +57,26 @@
 //  console.log(b);
 // })
 
-let ip = document.getElementById("num");
+// let ip = document.getElementById("num");
+// let ipp = document.getElementById("num1");
+// let res = document.getElementById("res")
 
-document.getElementsByTagName("button")[0]
-.addEventListener("click", () => ip.value = ip.value*2);
+// document.getElementById("add")[0].addEventListener("click", () => res.textContent = parseFloat(ip.value) + parseFloat(ipp.value));
+// document.getElementById("sub")[0].addEventListener("click", () => res.textContent = parseFloat(ip.value) - parseFloat(ipp.value));
+// document.getElementByid("mul")[0].addEventListener("click", () => res.textContent = parseFloat(ip.value) * parseFloat(ipp.value));   
+// document.getElementByid("div")[0].addEventListener("click", () => res.textContent = parseFloat(ip.value) / parseFloat(ipp.value));
+// document.write(res)
+
+
+
+fetch("https://dummyjson.com/products")
+.then(e => {
+ return e.json()
+})
+.then(e => {
+ let content = "";
+ e.products.forEach(x => {
+  content += <li> ${x.id}</li>;
+ });
+ document.getElementById("list").innerHTML = content;
+});

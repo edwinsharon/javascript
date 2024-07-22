@@ -252,9 +252,42 @@
 
 
 
-let ip = document.getElementById("num");
+// let ip = document.getElementById("num");
 
-document.getElementsByTagName("button")[0]
-.addEventListener("click", () => ip.value = ip.value*2);
+// document.getElementsByTagName("button")[0]
+// .addEventListener("click", () => ip.value = ip.value*2);
+
+
+fetch("https://dummyjson.com/products")
+.then(e => {
+ return e.json()
+})
+.then(e => {
+ let content = "";
+ e.products.forEach(x => {
+  content += <li> ${x.id}</li>;
+ });
+ document.getElementById("list").innerHTML = content;
+});
+
+// let x  = document.querySelector(".headding");
+// let y  = document.querySelectorAll(".headding");
+
+// let z = document.getElementsByClassName("headding");
+
+// let div = document.createElement("div");
+// div.textContent = "Hello";
+// x.appendChild(div);
+// x.innerHTML = `
+// <form>
+// <fieldset>
+// <legend>
+// Details
+// </legend>
+// </fieldset>
+// </fomr>
+// `;
+
+// console.log(y);
 
 

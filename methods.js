@@ -177,11 +177,84 @@
 
 // https://jsonplaceholder.typicode.com/todos
 
-let res = fetch("https://jsonplaceholder.typicode.com/todos");
+// let res = fetch("https://jsonplaceholder.typicode.com/todos");
 
-res.then(e => {
- return e.json();
-})
-.then(b => {
- console.log(b);
-})
+// res.then(e => {
+//  return e.json();
+// })
+// .then(b => {
+//  console.log(b);
+// })
+
+
+// let res = fetch("https://jsonplaceholder.typicode.com/todos");
+
+// let allP = Promise.race([
+//  fetch("https://jsonplaceholder.typicode.com/todos"),
+//  fetch("https://jsonplaceholder.typicode.com/todos"),
+//  fetch("https://jsonplaceholder.typicode.com/todos"),
+// ]);
+
+// allP.then(e => console.log(e))
+// .catch(e => console.log(e));
+
+// let a = setTimeout(() => console.log("timeout"),2000);
+// let b = setInterval(() => console.log("Interval"), 1000);
+
+// setTimeout(() => {
+//  clearInterval(b)
+//  console.log("Interval cleard");
+// },3000);
+
+// function p() {
+//  return new Promise((res, rej) => {
+//   setTimeout(() => {
+//    res("mdvhsj");
+//   },2000);
+//  });
+// }
+// async function p() {
+//  return "sdhjs";
+// }
+// p().then(() => console.log("Resolved"))
+
+// async function abcd() {
+//     let b = await fetch("https://jsonplaceholder.typicode.com/todos");
+//     console.log(b);
+//    } 
+   
+//    abcd();
+
+
+// let x = document.getElementById("hd");
+// let y = document.getElementsByTagName("div")[0];
+// let z = document.getElementsByClassName("headding")[0];
+
+
+// // x.style.backgroundColor = "red";
+// x.style.height = "100px";
+
+// document.getElementsByTagName("a")[0].href = "https://google.com";
+
+// function clickHandler() {
+//  x.style.backgroundColor = "red";
+//  x.innerHTML =  "<b>Hello world</b>";
+// }
+
+// function clickHandler2() {
+//  x.style.backgroundColor = "white";
+// }
+
+// let button = document.getElementsByTagName("button")[0];
+// button.addEventListener("click", clickHandler);
+// button.addEventListener("mouseover", clickHandler);
+// button.addEventListener("mouseleave", clickHandler2);
+
+
+
+let ip = document.getElementById("num");
+
+document.getElementsByTagName("button")[0]
+.addEventListener("click", () => ip.value = ip.value*2);
+
+

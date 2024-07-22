@@ -48,11 +48,16 @@
 // console.log(j);
 
 
-let res = fetch("https://jsonplaceholder.typicode.com/todos");
+// let res = fetch("https://jsonplaceholder.typicode.com/todos");
 
-res.then(e => {
- return e.json();
-})
-.then(b => {
- console.log(b);
-})
+// res.then(e => {
+//  return e.json();
+// })
+// .then(b => {
+//  console.log(b);
+// })
+
+let ip = document.getElementById("num");
+
+document.getElementsByTagName("button")[0]
+.addEventListener("click", () => ip.value = ip.value*2);

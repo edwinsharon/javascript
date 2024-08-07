@@ -73,6 +73,7 @@ fetch("https://dummyjson.com/products")
 .then(e => {
  return e.json()
 })
+console.log(e)
 .then(e => {
  let content = "";
  e.products.forEach(x => {

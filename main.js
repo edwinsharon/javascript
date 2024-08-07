@@ -16,6 +16,7 @@ fetch("https://dummyjson.com/products")
     }
     return response.json();
   })
+  console.log(product)
   .then(data => {
     let content = "";
     let images = "";

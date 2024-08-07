@@ -69,15 +69,22 @@
 
 
 
-fetch("https://dummyjson.com/products")
-.then(e => {
- return e.json()
-})
-console.log(e)
-.then(e => {
- let content = "";
- e.products.forEach(x => {
-  content += <li> ${x.id}</li>;
+// fetch("https://dummyjson.com/products")
+// .then(e => {
+//  return e.json()
+// })
+// console.log(e)
+// .then(e => {
+//  let content = "";
+//  e.products.forEach(x => {
+//   content += <li> ${x.id}</li>;
+//  });
+//  document.getElementById("list").innerHTML = content;
+// });
+
+
+fetch('https://dummyjson.com/products')
+ .then(res => res.json())
+ .then(function (data) {
+  console.log(data);
  });
- document.getElementById("list").innerHTML = content;
-});

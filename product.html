@@ -11,9 +11,13 @@
         object-fit: contain;
     }
     .product{
-        display: grid;
-        grid-template-columns: 1fr 2fr 5fr;
-       
+      
+      display: flex; 
+    }
+    .product div{
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .main2 button{
             background-color: green;
@@ -31,6 +35,9 @@
     .header2{
         color: goldenrod;
     }
+    .desd{
+        
+    }
  </style>
 </head>
 <body>
@@ -40,10 +47,10 @@
 <div class="header2">
     <h4><i>fashion store</i></h4>
 </div>
- <div class="main">
+ 
    
  <div class="product" id="product" ></div>
-</div>
+
  <script src="./main2.js"></script>
 </body>
 </html>

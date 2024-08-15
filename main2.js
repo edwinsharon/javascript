@@ -16,7 +16,7 @@ fetch(`https://dummyjson.com/products/${id}`)
         <div class="main2">
         <h2>${data.title}</h2>
         <h4>Rs${data.price}</h2>
-        <p>${data.description}</p>
+        <p class="desd">${data.description}</p>
         <button>BUY NOW</button>
         </div>
             

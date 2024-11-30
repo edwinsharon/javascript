@@ -51,19 +51,31 @@
   </div>
 
   <script>
-    function calculate(operation) {
-      const num1 = parseFloat(document.getElementById("num1").value);
-      const num2 = parseFloat(document.getElementById("num2").value);
-      let result;
+    //function calculate(operation) {
+      //const num1 = parseFloat(document.getElementById("num1").value);
+      //const num2 = parseFloat(document.getElementById("num2").value);
+      //let result;
 
-      if (isNaN(num1) || isNaN(num2)) {
-        result = "Please enter valid numbers!";
-      } else {
-        result = num1 + num2;
-      }
+      //if (isNaN(num1) || isNaN(num2)) {
+       // result = "Please enter valid numbers!";
+      //} else {
+        //result = num1 + num2;
+     // }
 
-      document.getElementById("result").textContent = `Result: ${result}`;
-    }
+      //document.getElementById("result").textContent = `Result: ${result}`;
+    //}
+const promise1=new Promise((resolve,reject)=>{
+  resolve(["javascript","html","css"]);
+});
+const promise2=new Promise((resolve,reject)=>{reject(["python","java","c++"])});
+const allPromises=Promise.allSettled([promise1,promise2]);
+allPromises
+  .then((res)=>{
+  console.log(res);
+  });
+allPromises.catch((err)=>{
+  console.log(err);
+  });
   </script>
 </body>
 </html>

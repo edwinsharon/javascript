@@ -1,0 +1,40 @@
+sudo mysql -u root -p
+
+
+SHOW DATABASES;
+
+
+CREATE DATABASE mydatabase;
+
+
+
+
+GRANT ALL PRIVILEGES ON mydatabase.* TO 'edwin'@'localhost';
+FLUSH PRIVILEGES;
+
+
+
+
+import mysql.connector
+
+mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",  # Replace with your username if not root
+    password="asd123.",  # Replace with your root or user password
+    database="mydatabase"  # Replace with the actual database name
+)
+
+print("Connected successfully!")
+
+
+
+pip install mysql-connector-python
+
+
+sudo mysql -u root
+
+
+
+SELECT user, host, plugin FROM mysql.user WHERE user = 'root';
+
+

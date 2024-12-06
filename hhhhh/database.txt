@@ -1,0 +1,22 @@
+sudo mysql -u root -p
+
+
+CREATE USER 'new_username'@'localhost' IDENTIFIED BY 'new_password';
+
+
+CREATE USER 'edwinsharon'@'localhost' IDENTIFIED BY 'mypassword123';
+
+
+GRANT ALL PRIVILEGES ON mydatabase.* TO 'new_username'@'localhost';
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'new_username'@'localhost' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+exit
+
+mysql -u new_username -p
+
+
+GRANT ALL PRIVILEGES ON *.* TO 'edwin'@'localhost' WITH GRANT OPTION;

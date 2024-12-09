@@ -30,4 +30,23 @@ SELECT * FROM users LIMIT 5;
 
 
 
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+cursor.execute('''
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE,
+    age INTEGER
+)
+''')
+
+conn.commit()
+conn.commit()
+conn.close()
+
+
+
+
+
 

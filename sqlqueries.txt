@@ -1,0 +1,33 @@
+sqlite3 database_name.db
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    email TEXT UNIQUE,
+    age INTEGER
+);
+INSERT INTO users (name, email, age) VALUES ('Alice', 'alice@example.com', 25);
+SELECT * FROM users;
+SELECT * FROM users;
+SELECT name, email FROM users;
+SELECT * FROM users WHERE age > 20;
+UPDATE users
+SET age = 26
+WHERE name = 'Alice';
+DELETE FROM users WHERE age < 20;
+DELETE FROM users WHERE age < 20;
+DROP TABLE users;
+SELECT COUNT(*) FROM users;
+SELECT MAX(age) FROM users;
+SELECT age, COUNT(*) FROM users GROUP BY age;
+advanced queries
+SELECT orders.id, users.name, orders.total
+FROM orders
+INNER JOIN users ON orders.user_id = users.id;
+SELECT * FROM users ORDER BY age DESC;
+SELECT * FROM users LIMIT 5;
+
+
+
+
+
+
